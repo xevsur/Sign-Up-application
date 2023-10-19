@@ -1,0 +1,365 @@
+html,
+body,
+#root {
+  height: 100%;
+  background-color: #FF7979;
+}
+@font-face {
+  font-family: 'Inter';
+  src: url(src/assets/Inter-VariableFont_slnt,wght.ttf);
+}
+.input-field.error {
+  background-image: url("./assets/images/icon-error.svg");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 20px;
+  border-color: red;
+}
+.input-field.invalid {
+  border-color: #ff4d4d;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  z-index: 1;
+  height: 100%;
+}
+.form-group input {
+  font-family: 'Inter' !important;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  color: #5f5e5e !important;
+}
+.form-group input::placeholder{
+  font-family: 'Inter';
+  font-size: 10px;
+  font-weight: 800;
+  color: rgb(131, 130, 129);
+}
+.sales-btn {
+  font-family: 'Inter';
+  font-weight: 800;
+  box-shadow: 1px 5px 5px rgb(66, 64, 64, 0.6);
+  background-color: #5E54A4;
+}
+
+.sales-btn span {
+  font-weight: 400;
+}
+.cta-terms{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-family: 'Inter';
+  font-weight: 550;
+  color: rgb(174, 173, 170);
+}
+.cta-terms a{
+  color: #FF7979;
+}
+.topText {
+  margin-bottom: 2rem;
+ font-family: 'Inter';
+ font-weight: 550;
+ color: rgb(235, 228, 216);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.mainPage{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100vh;
+  max-width: 100%;
+}
+.container {
+  min-width: 60%;
+  margin: 0 auto;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 0;
+  margin-left: 1rem;
+  z-index: 1;
+}
+.textCont {
+  margin-right: 1rem;
+  height: 30%;
+  width: 50%;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  z-index: 1;
+  text-size-adjust: 30rem;
+}
+form {
+  background-color: #fff;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  box-shadow: 1px 5px 5px rgb(66, 64, 64, 0.6);
+  margin-top: 2rem;
+}
+.success-message {
+  color: #44cc69;
+  font-size: 1rem;
+  margin-top: 0.7rem;
+}
+.background-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: repeat;
+  background-image: url("src/assets/images/bg-intro-desktop.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+.textCont h1{
+  font-family: 'Inter';
+  font-weight: 800;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 2rem;
+  color: rgb(235, 228, 216);
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+input[type='text'],
+input[type='email'],
+input[type='password'] {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid hsl(246, 25%, 77%);
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1d1f2f;
+  background-color: #f2f2f2;
+  transition: border-color 0.2s ease-in-out;
+}
+
+input[type='text']:focus,
+input[type='email']:focus,
+input[type='password']:focus {
+  outline: none;
+  border-color:  #5E54A4;
+  border-width: 1px;
+}
+
+.error-message {
+  font-family: 'In';
+  color: #ff4d4d;
+  font-size: 0.8rem;
+  margin-top: 0.1rem;
+  padding-right: 1%;
+  padding-left: 40%;
+}
+.cta-button{
+  background-color: #38CC8B;
+}
+button[type='submit'] {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 0.4rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.cta-button:hover {
+  opacity: 0.7;
+}
+
+@media screen and (max-width: 768px) {
+  html,
+  body,
+  #root {
+    height: 100%;
+  }
+  .textCont {
+    min-width: 400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    height: 200px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 4rem;
+    padding-bottom: 1rem;
+  }
+  .textCont h1{
+    padding-bottom: 1rem;
+    font-family: 'Inter';
+    font-weight: 800;
+    color: rgb(235, 228, 216);
+  }
+  .mainPage{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+  }
+  .container {
+    max-width: 600px;
+    min-width: 400px;
+    margin: 0 auto;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    height: 600px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 0;
+  }
+  .background-image {
+    background-image: url("src/assets/images/bg-intro-mobile.png");
+    background-repeat: repeat;
+  }
+  .content {
+    width: 100%;
+    max-width: 400px;
+    height: 100%;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .form-group {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  input[type='text'],
+  input[type='email'],
+  input[type='password'] {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid hsl(246, 25%, 77%);
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #1d1f2f;
+    background-color: #f2f2f2;
+    transition: border-color 0.2s ease-in-out;
+  }
+  
+  input[type='text']:focus,
+  input[type='email']:focus,
+  input[type='password']:focus {
+    outline: none;
+    border-color:  hsl(249, 10%, 26%);
+    border-width: 1px;
+  }
+  
+
+}
+@media screen and (min-width: 1470px) {
+  .mainPage {
+    height: 100vh;
+  }
+
+  .container {
+    max-width: 700px;
+    min-width: 600px;
+    height: 90%;
+    text-align: center;
+  }
+  .error-message {
+    font-family: 'In';
+    color: #ff4d4d;
+    font-size: 0.8rem;
+    margin-top: 0.1rem;
+  }
+  .content{
+    width: 600px;
+    height: 630px;
+  }
+  form{
+    width: 100%;
+    height: 90%;
+  }
+  .form-group{
+    height: 65px;
+  }
+  .textCont{
+    font-size: 30px;
+    height: 250px;
+  }
+  button[type='submit'] {
+    display: block;
+    width: 100%;
+    height: 5rem;
+    border: none;
+    border-radius: 0.4rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  input[type='text'],
+  input[type='email'],
+  input[type='password'] {
+  width: 100%;
+  height: 4rem;
+  padding: 0.75rem;
+  border: 1px solid hsl(246, 25%, 77%);
+  border-radius: 0.25rem;
+  font-size: 3rem;
+  font-weight: 600;
+  color: #1d1f2f;
+  background-color: #f2f2f2;
+  transition: border-color 0.2s ease-in-out;
+}
+.cta-button{
+  margin-top: 2rem;
+}
+.form-group input::placeholder{
+  font-family: 'Inter';
+  font-size: 18px;
+  font-weight: 800;
+  color: rgb(131, 130, 129);
+  opacity: 0.8;
+}
+.form-group input {
+  font-family: 'Inter' !important;
+  font-size: 18px !important;
+  font-weight: 600 !important;
+  color: #5f5e5e !important;
+}
+
+}
