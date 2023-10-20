@@ -118,6 +118,14 @@ form {
   font-size: 1rem;
   margin-top: 0.7rem;
 }
+.passError-message{
+  text-align: right;
+  font-family: 'Inter';
+  color: #ff4d4d;
+  display: block;
+  font-size: 0.8rem;
+  max-width: 35em;
+}
 .background-image {
   position: fixed;
   top: 0;
@@ -161,6 +169,7 @@ input[type='password'] {
   color: #1d1f2f;
   background-color: #f2f2f2;
   transition: border-color 0.2s ease-in-out;
+  max-width: 100%;
 }
 
 input[type='text']:focus,
@@ -172,12 +181,13 @@ input[type='password']:focus {
 }
 
 .error-message {
-  font-family: 'In';
+  font-family: 'Inter';
   color: #ff4d4d;
   font-size: 0.8rem;
   margin-top: 0.1rem;
   padding-right: 1%;
   padding-left: 40%;
+  text-align: right;
 }
 .cta-button{
   background-color: #38CC8B;
@@ -300,7 +310,7 @@ button[type='submit'] {
     text-align: center;
   }
   .error-message {
-    font-family: 'In';
+    font-family: 'Inter';
     color: #ff4d4d;
     font-size: 0.8rem;
     margin-top: 0.1rem;

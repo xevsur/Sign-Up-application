@@ -130,7 +130,7 @@ function App() {
                 onChange={(event) => setPassword(event.target.value)}
               />
               {formSubmitted && !isPasswordValid(password) && (
-                <div className="error-message">
+                <div className="passError-message">
                   Password must have 6 to 16 characters,start with a letter,
                   have at least 1 number, and have at least 1 special character
                 </div>
