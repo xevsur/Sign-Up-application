@@ -49,11 +49,7 @@ function App() {
       <div className="background-image"></div>
       <div className="container">
         <div className="content">
-          <button
-            type="submit"
-            className="sales-btn"
-            onClick={() => setFormSubmitted(true)}
-          >
+          <button type="submit" className="sales-btn">
             Try it free 7 days <span>then $20/mo. thereafter</span>
           </button>
           <form onSubmit={handleSubmit}>
@@ -136,7 +132,26 @@ function App() {
                 </div>
               )}
             </div>
-            <button type="submit" className="cta-button">
+            <button
+              type="submit"
+              className="cta-button"
+              onClick={(event) => {
+                event.preventDefault();
+                if (
+                  firstName === "" ||
+                  lastName === "" ||
+                  email === "" ||
+                  password === "" ||
+                  !isPasswordValid(password)
+                ) {
+                  setFormSubmitted(true);
+                  setFormSuccess(false);
+                } else {
+                  setFormSubmitted(true);
+                  setFormSuccess(true);
+                }
+              }}
+            >
               Claim Your Free Trial
             </button>
             {formSubmitted && formSuccess && (

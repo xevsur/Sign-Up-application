@@ -372,5 +372,8 @@ button[type='submit'] {
   font-weight: 600 !important;
   color: #5f5e5e !important;
 }
+.passError-message{
+  max-width: 100%;
+}
 
 }
