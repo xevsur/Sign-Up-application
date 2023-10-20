@@ -1,5 +1,9 @@
 import React, { useState } from "react";
 import "./App.css";
+import desktopImage from ".public/assets/images/bg-intro-desktop.png";
+import mobileImage from ".public/assets/images/bg-intro-mobile.png";
+import errorImage from ".public/assets/images/icon-error.svg";
+import InterFont from ".public/assets/Inter-VariableFont_slnt,wght.ttf";
 
 function App() {
   const [firstName, setFirstName] = useState("");
