@@ -1,14 +1,11 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 html,
 body,
 #root {
   height: 100%;
   background-color: #FF7979;
 }
-@font-face {
-  font-family: 'Inter';
-  src: url("../assets/Inter-VariableFont_slnt,wght.ttf") format("ttf");
-}
+
 .input-field.error {
   background-image: url("../assets/images/icon-error.svg");
   background-repeat: no-repeat;
@@ -28,19 +25,19 @@ body,
   height: 100%;
 }
 .form-group input {
-  font-family: 'Inter' !important;
+  font-family: 'Poppins' !important;
   font-size: 14px !important;
   font-weight: 500 !important;
   color: #5f5e5e !important;
 }
 .form-group input::placeholder{
-  font-family: 'Inter';
+  font-family: 'Poppins';
   font-size: 10px;
   font-weight: 800;
   color: rgb(131, 130, 129);
 }
 .sales-btn {
-  font-family: 'Inter';
+  font-family: 'Poppins';
   font-weight: 800;
   box-shadow: 1px 5px 5px rgb(66, 64, 64, 0.6);
   background-color: #5E54A4;
@@ -52,7 +49,7 @@ body,
 .cta-terms{
   margin-top: 2rem;
   margin-bottom: 2rem;
-  font-family: 'Inter';
+  font-family: 'Poppins';
   font-weight: 550;
   color: rgb(174, 173, 170);
 }
@@ -61,7 +58,7 @@ body,
 }
 .topText {
   margin-bottom: 2rem;
- font-family: 'Inter';
+ font-family: 'Poppins';
  font-weight: 550;
  color: rgb(235, 228, 216);
 }
@@ -120,7 +117,7 @@ form {
 }
 .passError-message{
   text-align: right;
-  font-family: 'Inter';
+  font-family: 'Poppins';
   color: #ff4d4d;
   display: block;
   font-size: 0.8rem;
@@ -142,7 +139,7 @@ form {
   margin-bottom: 1rem;
 }
 .textCont h1{
-  font-family: 'Inter';
+  font-family: 'Poppins';
   font-weight: 800;
   padding-left: 1rem;
   padding-right: 1rem;
@@ -181,7 +178,7 @@ input[type='password']:focus {
 }
 
 .error-message {
-  font-family: 'Inter';
+  font-family: 'Poppins';
   color: #ff4d4d;
   font-size: 0.8rem;
   margin-top: 0.1rem;
@@ -228,7 +225,7 @@ button[type='submit'] {
   }
   .textCont h1{
     padding-bottom: 1rem;
-    font-family: 'Inter';
+    font-family: 'Poppins';
     font-weight: 800;
     color: rgb(235, 228, 216);
   }
@@ -310,7 +307,7 @@ button[type='submit'] {
     text-align: center;
   }
   .error-message {
-    font-family: 'Inter';
+    font-family: 'Poppins';
     color: #ff4d4d;
     font-size: 0.8rem;
     margin-top: 0.1rem;
@@ -339,7 +336,7 @@ button[type='submit'] {
     font-size: 1.5rem;
     font-weight: 600;
     color: #fff;
-    cursor: pointer;
+    cursor: poPoppins;
     transition: background-color 0.2s ease-in-out;
   }
   input[type='text'],
@@ -360,14 +357,14 @@ button[type='submit'] {
   margin-top: 2rem;
 }
 .form-group input::placeholder{
-  font-family: 'Inter';
+  font-family: 'Poppins';
   font-size: 18px;
   font-weight: 800;
   color: rgb(131, 130, 129);
   opacity: 0.8;
 }
 .form-group input {
-  font-family: 'Inter' !important;
+  font-family: 'Poppins' !important;
   font-size: 18px !important;
   font-weight: 600 !important;
   color: #5f5e5e !important;
