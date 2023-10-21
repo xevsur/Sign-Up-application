@@ -109,6 +109,7 @@ form {
   padding: 2rem;
   box-shadow: 1px 5px 5px rgb(66, 64, 64, 0.6);
   margin-top: 2rem;
+  max-width: 500px;
 }
 .success-message {
   color: #44cc69;
@@ -121,7 +122,7 @@ form {
   color: #ff4d4d;
   display: block;
   font-size: 0.8rem;
-  max-width: 35em;
+  max-width: 100%;
 }
 .background-image {
   position: fixed;

@@ -127,8 +127,8 @@ function App() {
               />
               {formSubmitted && !isPasswordValid(password) && (
                 <div className="passError-message">
-                  Password must have 6 to 16 characters,start with a letter,
-                  have at least 1 number, and have at least 1 special character
+                  Password must have 6 to 16 characters, have at least 1 number
+                  and have at least 1 special character
                 </div>
               )}
             </div>
